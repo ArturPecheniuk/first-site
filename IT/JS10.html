@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*function bigOne(str) {
+ // Порожній рядок під час такої перевірки дає 0  
+if (str.charAt(0)==0) return str= 'Прохання, не вводьте порожніх рядків ';
+  return str[0].toUpperCase() + str.slice(1); // тут ми перестворимо рядок
+}
+let strInBigOne = prompt("Введіть рядок", "ім'я пишеться з великої літери");
+alert( bigOne(strInBigOne) );
+
+
+
+function findSpam(str) {  
+let lowCaseStr = str.toLowerCase();  
+return !!(~lowCaseStr.indexOf('безкоштовно') || ~lowCaseStr.indexOf('гарантія'));  }  
+alert( 'Отримайте БЕЗКОШТОВНО, тільки клікнувши на посилання'+ ' перевірка на спам : ' + findSpam('Отримайте БЕЗКОШТОВНО, тільки клікнувши на посилання ') );  
+alert('Це гарантія, що ви виграєте' + 'перевірка на спам : ' + findSpam('Це гарантія, що ви виграєте ') );
+alert('Привіт як справи?'+ ' перевірка на спам : ' + findSpam('Привіт як справи?') );
+
+
+
+let str = "бредуть бобри в сирі бори. бобри хоробрі, а для бобрят добрі ";
+let target = prompt("Введіть підрядок для пошуку","ри"); // мета пошуку
+let position = 0;
+// Довжину рядка визначати не будемо використовуємо нескінченний цикл з перериванням break вкінці рядка
+while (true) {
+  let searchPos = str.indexOf(target, position);
+  if (searchPos == -1) break; // якщо рядок закінчився
+
+  alert('знайшли ' +target+ ' тут: '+ searchPos );
+  position = searchPos + 1; // продовжити пошук з наступного
+}
+
+
+
+let num = prompt("Введіть число")
+alert("У цьому числі"+ num.length + "цифер")
+
+
+let number=prompt("Enter number") 
+document.write("in number "+number+ " "+ number.length +"digits"+"<br>")
+for(let i=0;i<number.length;i++){
+ document.write(number[i]+"<br>") 
+}
+
+
+       
+
+
+*/
+
+       let num = prompt("Введіть число");
+       
+       if (num.length % 10 === 1 && num.length !== 11) {
+           document.write("У числі " + num + " " + num.length + " цифра" + "<br>");
+       } else if (num.length % 10 >= 2 && num.length % 10 <= 4 && (num.length < 10 || num.length >= 20)) {
+           document.write("У числі " + num + " " + num.length + " цифри" + "<br>");
+       } else {
+           document.write("У числі " + num + " " + num.length + " цифр" + "<br>");
+       }
+       for(let i=0;i<num.length;i++){
+       
+       switch (num[i]) {
+         case '1':
+       document.write( 'Один ' );
+           break; 
+         case '2':
+           document.write( 'Два ' );
+           break; 
+         case '3':
+           document.write( 'Три ' );
+           break; 
+       case '4':
+           document.write( 'Чотири ' );
+           break; 
+       case '5':
+           document.write( "П'ять " );
+           break; 
+       case '6':
+           document.write( 'Шість ' );
+           break; 
+       case '7':
+           document.write( 'Сім ' );
+           break; 
+       case '8':
+           document.write( 'Вісім ' );
+           break; 
+       case '9':
+           document.write( "Дев'ять " );
+           break; 
+       case '0':
+           document.write( 'Нуль ' );
+           break; 
+       }}
+
+
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    font-family: cursive;
+    </style>
+</head>
+<body>
+    
+
+<script>
+
+/*let numbers = ['Нуль','Один','Два'];
+numbers.pop(); // видалили два
+alert(numbers);
+numbers.push('Нове два'); // Додали нове два
+alert(numbers);
+numbers.shift(); // видалили нуль
+alert(numbers);
+numbers.unshift('Новий нуль'); // додали новий нуль
+alert(numbers);
+
+let colors=["yellow","blue"];
+alert(colors);
+colors[2]="red";
+alert(colors);
+colors[colors.length-2]="black"
+alert(colors);
+colors.shift();
+alert(colors);
+colors.unshift("green","orange");
+alert(colors);
+*/
+let compliments=["funny","smart","cool", "genius","clever", "sensible","cheerful","generous","kind","creative","quick-witted","hard-working","determined","optimistic","determined"]
+let animals=["polar bear", "cat","leopard","butterfly","duck","rabbit","ladybug", "monkey","rhino","squirrel","lion","chicken","cow"]
+let colors=["red","yellow","blue","green","orange","pink","purple","violet","plum","fuschia","magenta","lilac"]
+
+let number= +prompt("How many compliments do you want?",100)
+        for (i = 1; i <= number; i++){
+            let rand1=Math.floor(Math.random()*colors.length)
+
+            let rand2=Math.floor(Math.random()*compliments.length)
+            let rand3=Math.floor(Math.random()*animals.length)
+
+            document.writeln(`<p style='color:${colors[rand1]}'>${i} ) You are so ${compliments[rand2]} as ${animals[rand3]}! </p>`);
+        }
+
+
+
+/*
+        human = new Object();
+human.name   = ("В'ячеслав");
+human.age    = 34;
+human.gender = 'Male';
+human.greet = function(personName) {
+    return this.name + ': Радий Вас бачити, ' + personName + '!'
+}
+// давайте перевіримо наш метод «привіт» для об'єкта «людина»
+alert(human.greet('Катерина'));
+alert(human.greet('Олег'));
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+</body>
+</html>

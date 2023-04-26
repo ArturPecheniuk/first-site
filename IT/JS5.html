@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       /* let userLogin=prompt("Enter your login","")
+        if (userLogin=="user"){
+        let userPassword=prompt("Enter your Password","")
+        if(userPassword=="JS"){
+            alert("Welcome")
+        } else if(userPassword==null){
+            alert("Pasword canceled")
+        }else{
+            alert("Pasword is wrong")
+        }
+    } else if(userPassword==null){
+        alert("Login canceled")
+    }else{
+        alert("Pasword is wrong")
+    }
+
+    let number = +prompt("Введіть число", 0);
+    if(number > 100){
+        alert("значення більше ста");
+    }else if (number < 100) {
+        alert("значення менше ста")
+    }else{
+        alert ("100")
+    }
+
+  
+    
+    let answer; 
+let inputN = +prompt("Введіть число від 1 до 50","");
+let questN = +prompt("Вгадайте число від 1 до 50","");
+if(questN > inputN){answer="Ваше число більше"};
+if(questN < inputN){answer="Ваше число менше"};
+if(questN == inputN){answer="Ви Вгадали!"}; 
+alert(answer);
+
+let money = +prompt('Яку суму хочете зняти','');
+if (money < 50 || money > 3000) {
+alert ('На жаль, Ви можете зняти гроші на суму від 50грн. до 3000 грн.');
+}else{
+    alert (`Заберіть свої гроші у сумі ${money}грн`)
+}
+
+let age = +prompt('Ваш вік:' , 0)
+if (age < 18 || age > 100){
+    alert('Вам заборонено вхід до сайту');
+}else{
+    alert ('Вам дозволено доступ до сайду!');
+}
+*/
+  let a=+prompt("Перший коефіцієнт")
+    let b=+prompt("Другий коефіцієнт")
+    let c=+prompt("Вільний член")
+    let D=b*b-4*a*c
+    let x1=(-b+Math.sqrt(D))/2*a
+    let x2=(-b-Math.sqrt(D))/2*a
+    if (D>0){
+        alert(`Рівняння має два корені x1=${x1} x2=${x2}`)
+    }else if (D==0){
+        alert(`Рівняння має один корень x=${x1}`);
+    }else if (D<0){
+        alert("Рівняння не має коренів!");
+    }else{
+    alert("Ви ввели не число!");
+    }
+    </script>
+</body>
+</html>
